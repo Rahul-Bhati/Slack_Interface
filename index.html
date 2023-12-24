@@ -1,34 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SLACK INTERFACE - Official</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+  </head>
 
-<head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>SLACK INTERFACE - Official</title>
-     <link rel="stylesheet" href="./assets/css/styles.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
-
-</head>
-
-<body>
-     <nav>
-          <div class="container">
-               <div class="menu">
-                    <ul>
-                         <li><i class="fa-solid fa-arrow-left"></i></li>
-                         <li><i class="fa-solid fa-arrow-right"></i></li>
-                         <li><i class="fa-regular fa-clock"></i></li>
-                         <li><input class="search" type="text" placeholder="Search A1 Marketing Ltd.">
-                         </li>
-                         <li><i class="fa-regular fa-circle-question"></i></li>
-                    </ul>
-               </div>
-               <div class="logo">
-                    <img src="https://bit.ly/dan-abramov" alt="logo">
-               </div>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="menu">
+          <ul>
+            <li><i class="fa-solid fa-arrow-left"></i></li>
+            <li><i class="fa-solid fa-arrow-right"></i></li>
+            <li><i class="fa-regular fa-clock"></i></li>
+            <li>
+              <input
+                class="search"
+                type="text"
+                placeholder="Search A1 Marketing Ltd."
+              />
+            </li>
+            <li><i class="fa-regular fa-circle-question"></i></li>
+          </ul>
+        </div>
+        <div class="logo">
+          <img src="https://bit.ly/dan-abramov" alt="logo" />
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="sidebar">
+        <div class="group">
+          <div class="groups active">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/7/70/Adendorff_Machinery_Mart_Head_Office.jpg"
+              alt="group-1"
+            />
           </div>
-     </nav>
-</body>
+          <div class="groups">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/68/Baku.Electronic.jpg"
+              alt="group-1"
+            />
+          </div>
+          <div class="group">
+            <i class="fa-solid fa-plus add-group"></i>
+          </div>
+        </div>
+        <div class="group-detail">
+          <div class="group-name">
+            <div class="group-expand">
+              <h3>A1 Marketing Ltd.</h3>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="group-edit">
+              <i class="fa-regular fa-pen-to-square"></i>
+            </div>
+          </div>
+          <div class="expand-detail">
+            <ul>
+              <li class="channel-chats">
+                <a href="">
+                  <i class="fa-regular fa-comment" style="width: 25px"></i>
+                  <span>Thread</span>
+                </a>
+              </li>
+              <li class="channel-chats">
+                <a href=""
+                  ><i style="width: 25px" class="fa-regular fa-comments"></i
+                  ><span>&nbsp;All DMs</span></a
+                >
+              </li>
+              <li class="channel-chats">
+                <a href=""
+                  ><i style="width: 25px" class="fa-regular fa-file-lines"></i
+                  ><span>&nbsp;Drafts</span></a
+                >
+              </li>
+              <li class="channel-chats">
+                <a href="">
+                  <i class="fa-solid fa-at" style="width: 25px"></i>
+                  <span>Mentions & reactions</span>
+                </a>
+              </li>
+              <li class="channel-chats">
+                <a href="">
+                  <i class="fa-regular fa-bookmark" style="width: 25px"></i>
+                  <span>Saved items</span>
+                </a>
+              </li>
+              <li class="channel-chats">
+                <a href="">
+                  <i
+                    class="fa-solid fa-ellipsis-vertical"
+                    style="width: 25px"
+                  ></i>
+                  <span>More</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i
+                    class="fa-solid fa-star"
+                    style="width: 25px; color: gold"
+                  ></i>
+                  <span>Stared</span>
+                </a>
+                <ul style="margin-top: 10px">
+                  <li  class="channel-sub-chats">
+                    <i class="fa-solid fa-hashtag" style="width: 25px"></i>
+                    <span>design-team</span>
+                  </li>
+                  <li  class="channel-sub-chats">
+                    <i class="fa-solid fa-hashtag active" style="width: 25px"></i>
+                    <span class="active">social-media
+                      <i class="fa-brands fa-hive" style="float: right;"></i>
+                    </span>
+                  </li>
+                  <li  class="channel-sub-chats">
+                    <i class="fa-solid fa-hashtag" style="width: 25px"></i>
+                    <span>team-finance</span>
+                  </li>
+                  <li class="star-friend channel-sub-chats" style="display: flex;">
+                    <div class="online">
+                      <img style="width: 25px;height: 25px;justify-content: center;align-items: center;" src="https://upload.wikimedia.org/wikipedia/commons/3/37/Icelandic_girl_in_Icelandic_colours_on_Icelandic_National_Day.jpg">
+                      <i class="fa-solid fa-circle"></i>
+                    </div>
+                    <span style="margin-left: 5px;">Elena Nowak</span>
+                  </li>
+                </ul>
+              </li>
+              
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-caret-down" style="width: 25px"></i>
+                  <span>Channels</span>
+                </a>
+                <ul style="margin-top: 10px">
+                  <li class="channel-sub-chats">
+                    <i class="fa-solid fa-hashtag" style="width: 25px"></i>
+                    <span>announcements</span>
+                  </li>
+                  <li class="channel-sub-chats">
+                    <i class="fa-solid fa-hashtag" style="width: 25px"></i>
+                    <span>pr</span>
+                  </li>
+                  <li class="add-channel channel-sub-chats">
+                    <i class="fa-solid fa-plus" style="width: 25px"></i></i>
+                    <span>Add channel</span>
+                  </li>
+                </ul>
+              </li>
+              
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-caret-down" style="width: 25px"></i>
+                  <span>Direct message</span>
+                </a>
+                <ul style="margin-top: 10px">
+                  <li class="star-friend channel-sub-chats" style="display: flex;">
+                    <div class="online">
+                      <img style="width: 25px;height: 25px;justify-content: center;align-items: center;" src="https://bit.ly/ryan-florence" alt="Ryan Florence">
+                      <i class="fa-solid fa-circle"></i>
+                    </div>
 
+                    <span style="margin-left: 5px;">Ryan Florence</span>
+                    <span style="margin-left: 10px;font-size: 15px;">you</span>
+                  </li>
+                  <li class="star-friend channel-sub-chats" style="display: flex;">
+                    <img style="width: 25px;height: 25px;justify-content: center;align-items: center;" src="https://bit.ly/kent-c-dodds" alt="Kent Dodds">
+                    <span>Kent Dodds</span>
+                  </li>
+                  <li class="add-channel channel-sub-chats">
+                    <i class="fa-solid fa-plus" style="width: 25px"></i></i>
+                    <span>Add teammates</span>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-caret-down" style="width: 25px"></i>
+                  <span>Apps</span>
+                </a>
+                <ul style="margin-top: 10px">
+                  <li class="star-friend channel-sub-chats" style="display: flex;">
+                    <img style="width: 25px;height: 25px;justify-content: center;align-items: center;" src="./assets/images/calendar.png" alt="Ryan Florence">
+                    <span>Google Calendar</span>
+                  </li>
+                  </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="container">
+          <div class="chat-header">
+            <div class="chat-name">
+              <h3># social-media</h3>
+              <i class="fa-solid fa-chevron-down"></i>
+              <div class="chat-name-detail">
+                Track and coordinate social media
+              </div>
+            </div>
+            <div class="members">
+              <!-- <div class="wrap"> -->
+                <img class="img-1" alt='Dan Abrahmov' src='https://bit.ly/dan-abramov' >
+                <img alt='Kent Dodds' src='https://bit.ly/kent-c-dodds'>
+                <img alt='Ryan Florence' src='https://bit.ly/ryan-florence'>
+                <span>74</span>
+              <!-- </div> -->
+            </div>
+          </div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
