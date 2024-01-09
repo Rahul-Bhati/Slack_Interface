@@ -436,6 +436,7 @@ nav {
      /* flex: 3; */
      width: 100%;
      height: 100vh;
+     justify-content: space-between;
      /* overflow-y: scroll;
      top: 0;
      bottom: 0; */
@@ -451,6 +452,7 @@ nav {
      overflow-y: scroll;
      top: 0;
      bottom: 0;
+     flex-grow: 1;
 }
 
 .messages ul {
@@ -471,7 +473,7 @@ nav {
      border-radius: 8px;
 }
 
-.messages ul li h4{
+.messages ul li h4 {
      font-size: 1rem;
      font-weight: bold;
      color: var(--septenary-color);
@@ -480,22 +482,25 @@ nav {
 
 .messages ul li span {
      font-size: 0.75rem;
-     font-weight:500;
-     color:var(--tertiary-color);
+     font-weight: 500;
+     color: var(--tertiary-color);
 
 }
-.user__message ul{
+
+.user__message ul {
      display: flex;
      flex-direction: row;
      list-style: none;
 }
-.user__message ul li{
+
+.user__message ul li {
      margin: 5px;
      padding: 5px 12px;
      border-radius: 16px;
      background: #fcf2fa;
 }
-.user__message ul li img{
+
+.user__message ul li img {
      width: 15px;
      height: 15px;
      border-radius: 8px;
@@ -505,35 +510,44 @@ nav {
      width: 100%;
      /* background-color: #007a5a; */
      color: #ffffff;
-     /* height: 180px; */
-     height: 30%;
+     height: 230px;
+     /* height: 22%; */
      /* text-align: center; */
-     font-size: 2rem;
+     /* font-size: 2rem; */
      /* flex: 1; */
-     padding: 7px 20px;
-     margin-bottom: 15px;
+     padding: 0px 20px;
+     /* margin-bottom: 15px; */
+     bottom: 0;
+     /* position: fixed; */
 }
 
-.input_message .input_field{
+.input_message .input_field {
      display: flex;
      flex-direction: column;
      width: 100%;
      /* height: 100%; */
      border-radius: 8px;
-          border: 2px solid var(--quinary-color);
-          height: 80px;
-          flex-grow: 1;
+     border: 2px solid var(--quinary-color);
+     height: 80px;
+     flex-grow: 1;
 }
 
-.input_message input{
+.input_message input {
      width: 100%;
-     height: 30px;
-     border:none;
+     height: 40px;
+     font-size: large;
+     border: none;
      margin: 0;
+     outline: none;
      /* height: 80%; */
 }
 
-.input_field .msg_option{
+.search[type="text"]::placeholder {
+     text-align: center;
+     color: var(--senary-color);
+}
+
+.input_field .msg_option {
      display: flex;
      justify-content: space-between;
      background: #fcf3fb;
@@ -542,13 +556,13 @@ nav {
      width: 100%;
      /* height: 100%; */
      /* overflow: hidden; */
-     padding: 9px 10px;    
+     padding: 9px 10px;
      font-size: 1.1rem;
      color: var(--tertiary-color);
      border-top: 1px solid var(--quinary-color);
 }
 
-.input_field .msg_option .left{
+.input_field .msg_option .left {
      display: flex;
      align-items: center;
      gap: 25px;
@@ -562,5 +576,105 @@ nav {
 
 .input_msg[type="text"]::placeholder {
      text-align: center;
-     color: var(--senary-color);
+     color: var(--quinary-color);
+}
+
+.container .menu .sm {
+     display: none;
+}
+
+@media (max-width: 768px) {
+     .sidebar {
+          display: none;
+     }
+
+     .main {
+          width: 100%;
+     }
+
+     nav {
+          justify-content: space-evenly;
+     }
+
+     #search {
+          width: 10rem;
+          background-position: 90% center;
+     }
+
+     #search::-webkit-input-placeholder {
+          /* WebKit browsers */
+          color: transparent;
+     }
+
+     #search:-moz-placeholder {
+          /* Mozilla Firefox 4 to 18 */
+          color: transparent;
+     }
+
+     #search::-moz-placeholder {
+          /* Mozilla Firefox 19+ */
+          color: transparent;
+     }
+
+     #search:-ms-input-placeholder {
+          /* Internet Explorer 10+ */
+          color: transparent;
+     }
+
+     .input_message {
+          margin: 15px 0;
+     }
+
+     .input_message {
+          height: 12%;
+          width: 100%;
+     }
+
+     .input_message .msg_option {
+          display: none;
+     }
+
+     .input_message .input_field {
+          height: 40px;
+     }
+
+     .input_message input {
+          height: 30px;
+          outline: none;
+          margin-left: 10px;
+          padding: 0;
+     }
+
+     .chats-head {
+          display: none;
+     }
+
+     .input_msg[type="text"]::placeholder {
+          text-align:left;
+          /* padding-left: 30px; */
+     }
+}
+
+@media (max-width: 430px) {
+     nav {
+          background-color: var(--nonary-color);
+          color: var(--septenary-color);
+     }
+
+     .container .menu {
+          justify-content: space-between;
+     }
+
+     .container .menu .lg {
+          display: none;
+     }
+
+     .container .logo .lg {
+          display: none;
+     }
+
+     .container .menu .sm {
+          display: flex;
+          justify-content: space-between;
+     }
 }
