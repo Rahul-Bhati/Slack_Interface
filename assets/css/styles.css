@@ -160,6 +160,7 @@ nav {
      top: 0;
      bottom: 0;
      color: var(--quaternary-color);
+     padding-bottom: 5rem;
 }
 
 .sidebar .group-detail .group-name {
@@ -587,6 +588,12 @@ nav {
      display: none;
 }
 
+li {
+     cursor: pointer;
+}
+
+
+
 @media (max-width: 768px) {
      /* */
 
@@ -678,7 +685,19 @@ nav {
 
 @media (max-width: 545px) {
      .sidebar {
-          display: none;
+          /* display: none; */
+
+          visibility: hidden;
+          position: absolute;
+     }
+
+     .sidebar--visible {
+          display: flex;
+          position: absolute;
+          top: 0;
+          width: 100%;
+          visibility: visible;
+
      }
 
      nav {
