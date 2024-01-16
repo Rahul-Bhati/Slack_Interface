@@ -7,7 +7,7 @@
 // })
 
 const navToggle = document.querySelector('.nav-toggle');
-const sidebar = document.querySelector('.sidebar');
+const sidebar = document.querySelector('.small_sidebar');
 
 console.log(sidebar, navToggle);
 

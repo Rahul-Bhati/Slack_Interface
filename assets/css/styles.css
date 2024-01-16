@@ -592,7 +592,9 @@ li {
      cursor: pointer;
 }
 
-
+.small_sidebar {
+     display: none;
+}
 
 @media (max-width: 768px) {
      /* */
@@ -684,8 +686,7 @@ li {
 }
 
 @media (max-width: 545px) {
-     .sidebar {
-          /* display: none; */
+     .small_sidebar {
 
           visibility: hidden;
           position: absolute;
@@ -717,8 +718,41 @@ li {
           display: none;
      }
 
+     .container .lg_sidebar {
+          display: none;
+     }
+
      .container .menu .sm {
           display: flex;
           justify-content: space-between;
      }
+
+     .small_sidebar .group-detail .group-name {
+          min-height: 3rem;
+          display: flex;
+     }
+
+     .small_sidebar .group-detail .group-name .group-expand img {
+          width: 25px;
+          height: 25px;
+          justify-content: space-around;
+          align-items: center;
+          border-radius: 7px;
+          margin-right: 1rem;
+     }
+
+     .small_sidebar .group-detail .group-name .searchIcon {
+          margin-right: 1rem;
+     }
+
+     /* .sidebar  .group-detail .expand-detail {
+          background-color: #fff;
+     }
+
+     .small_sidebar .group-detail .expand-detail ul a{
+          color: #000;
+     } 
+     
+     kal nav bar alag rakhege or aside ko niche rakhe ge,nav ba ko bhi toggle ke sath change kre ge
+     */
 }
