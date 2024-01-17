@@ -111,6 +111,7 @@ nav {
      /* flex: 1; */
      background-color: var(--primary-color);
      /* height: calc(100vh - 8vh); */
+     padding-bottom: 3rem;
 }
 
 
@@ -160,10 +161,10 @@ nav {
      top: 0;
      bottom: 0;
      color: var(--quaternary-color);
-     padding-bottom: 5rem;
+     /* padding-bottom: 5rem; */
 }
 
-.sidebar .group-detail .group-name {
+.sidebar .group-name {
      display: flex;
      align-items: center;
      justify-content: space-between;
@@ -177,24 +178,24 @@ nav {
      gap: 10px;
 }
 
-.sidebar .group-detail .group-name .group-expand {
+.sidebar .group-name .group-expand {
      display: flex;
      justify-content: space-around;
      align-items: center;
      /* padding: 10px; */
 }
 
-.sidebar .group-detail .group-name .group-expand h3 {
+.sidebar .group-name .group-expand h3 {
      font-size: 1.2em;
      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.sidebar .group-detail .group-name .group-expand .fa-chevron-down {
+.sidebar .group-name .group-expand .fa-chevron-down {
      font-size: 10px;
      padding-left: 10px;
 }
 
-.sidebar .group-detail .group-name .group-edit {
+.sidebar .group-name .group-edit {
      width: 2.5rem;
      height: 2.5rem;
      background: var(--quaternary-color);
@@ -205,11 +206,15 @@ nav {
      justify-content: center;
 }
 
-.sidebar .group-detail .group-name .group-edit .fa-pen-to-square {
+.sidebar .group-name .group-edit .fa-pen-to-square {
      color: var(--primary-color);
 }
 
 /* group detail css */
+.expand-detail {
+     padding: 7px 0 2rem 0;
+}
+
 .sidebar .group-detail .expand-detail ul {
      display: flex;
      flex-direction: column;
@@ -406,8 +411,8 @@ nav {
      width: 8px;
 }
 
-.group-detail::-webkit-scrollbar-track {
-     background-color: var(--secondary-color);
+::-webkit-scrollbar-track {
+     /* background-color: var(--secondary-color); */
      /* Track color */
 }
 
@@ -686,8 +691,16 @@ li {
 }
 
 @media (max-width: 545px) {
-     .small_sidebar {
+     .sidebar {
+          padding-bottom: 0;
+     }
 
+     .small_sidebar {
+          display: flex;
+          flex-direction: column;
+          /* align-content: flex-end; */
+          /* justify-content: center; */
+          /* align-items: flex-end; */
           visibility: hidden;
           position: absolute;
      }
@@ -727,12 +740,14 @@ li {
           justify-content: space-between;
      }
 
-     .small_sidebar .group-detail .group-name {
+     .small_sidebar .group-name {
           min-height: 3rem;
           display: flex;
+          margin: 0;
+          color: var(--quaternary-color);
      }
 
-     .small_sidebar .group-detail .group-name .group-expand img {
+     .small_sidebar .group-name .group-expand img {
           width: 25px;
           height: 25px;
           justify-content: space-around;
@@ -745,14 +760,42 @@ li {
           margin-right: 1rem;
      }
 
-     /* .sidebar  .group-detail .expand-detail {
+     .sidebar .group-detail .expand-detail {
           background-color: #fff;
+          font-weight: 500;
      }
 
-     .small_sidebar .group-detail .expand-detail ul a{
-          color: #000;
-     } 
-     
-     kal nav bar alag rakhege or aside ko niche rakhe ge,nav ba ko bhi toggle ke sath change kre ge
-     */
+     .small_sidebar span {
+          color: #151414;
+     }
+
+     .small_sidebar .group-detail {
+          /* height: 100vh; */
+     }
+
+     .small_sidebar .group-detail .expand-detail ul .channel-sub-chats {
+          color: #111111;
+     }
+
+     .small_sidebar .group-detail .expand-detail ul .channel-chats a {
+          color: #111111;
+     }
+
+     .small_search {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          height: 2rem;
+          border-radius: 7px;
+          border-bottom: 1px solid var(--quinary-color);
+          padding: 0 1rem;
+     }
+
+     .footer_nav {
+          /* position: fixed; */
+     }
+
+     /* kal nav bar alag rakhege or aside ko niche rakhe ge,nav ba ko bhi toggle ke sath change kre ge */
+
 }
