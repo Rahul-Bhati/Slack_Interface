@@ -540,6 +540,8 @@ nav {
      border: 2px solid var(--quinary-color);
      height: 80px;
      flex-grow: 1;
+     margin-top: 10px;
+     padding-top: 10px;
 }
 
 .input_message input {
@@ -561,6 +563,7 @@ nav {
      display: flex;
      justify-content: space-between;
      background: #fcf3fb;
+     gap: 10px;
      /* align-items: center; */
      border-radius: 0 0 8px 8px;
      width: 100%;
@@ -575,7 +578,10 @@ nav {
 .input_field .msg_option .left {
      display: flex;
      align-items: center;
-     gap: 25px;
+     justify-content: space-between;
+     /* gap: 25px; */
+     /* flex-shrink: 1; */
+     flex-grow: 1;
 }
 
 .input_field .msg_option .right {
@@ -671,6 +677,8 @@ li {
 
      .input_message .input_field {
           height: 40px;
+          margin: 0;
+          padding: 0;
      }
 
      .input_message input {
@@ -688,6 +696,7 @@ li {
           text-align: left;
           /* padding-left: 30px; */
      }
+
 }
 
 @media (max-width: 545px) {
@@ -698,9 +707,6 @@ li {
      .small_sidebar {
           display: flex;
           flex-direction: column;
-          /* align-content: flex-end; */
-          /* justify-content: center; */
-          /* align-items: flex-end; */
           visibility: hidden;
           position: absolute;
      }
@@ -760,27 +766,33 @@ li {
           margin-right: 1rem;
      }
 
-     .sidebar .group-detail .expand-detail {
-          background-color: #fff;
-          font-weight: 500;
+     .sidebar .group-detail .expand-detail ul li {
+          margin-block: 5px;
      }
 
      .small_sidebar span {
-          color: #151414;
+          color: #141212;
      }
 
      .small_sidebar .group-detail {
           /* height: 100vh; */
+          flex-grow: 1;
+          height: 3rem;
+          background-color: #fff;
+          font-weight: 600;
      }
 
      .small_sidebar .group-detail .expand-detail ul .channel-sub-chats {
-          color: #111111;
+          color: #a9a1a1;
      }
 
      .small_sidebar .group-detail .expand-detail ul .channel-chats a {
-          color: #111111;
+          color: #847575;
      }
 
+     .small_sidebar .group-detail .expand-detail ul .channel-chats a span{
+          color: #514848;
+     }
      .small_search {
           display: flex;
           align-items: center;
@@ -792,10 +804,31 @@ li {
           padding: 0 1rem;
      }
 
-     .footer_nav {
-          /* position: fixed; */
+     .small_sidebar .small_footer {
+          background-color: #fff;
+          font-weight: 600;
+          color: #141212;
+          border-top: 1px solid #000000;
+          display: flex;
+          justify-content: space-between;
+          padding-inline: 3rem;
      }
 
-     /* kal nav bar alag rakhege or aside ko niche rakhe ge,nav ba ko bhi toggle ke sath change kre ge */
+     .small_sidebar .small_footer a {
+          display: flex;
+          flex-direction: column;
+          text-decoration: none;
+          gap: 5px;
+          color: #5c5656;
+          font-size: 18px;
+     }
+
+     .small_sidebar .small_footer a:focus {
+          color: #000000;
+     }
+
+     .small_sidebar .small_footer a span {
+          font-size: 10px;
+     }
 
 }
